@@ -1,0 +1,3 @@
+[2025-05-05 13:39:28.963413]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
+[2025-05-05 13:40:58.806481]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
+[2025-05-05 13:42:01.375138]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
