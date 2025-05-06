@@ -1,3 +1,6 @@
 [2025-05-05 13:39:26.579802]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
 [2025-05-05 13:40:54.142448]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
 [2025-05-05 13:41:58.759657]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
+[2025-05-06 17:41:36.947988]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
+[2025-05-06 17:53:45.879410]Failed to fetch or process: 'NoneType' object has no attribute 'merge'
+[2025-05-06 17:56:24.385967]Failed to fetch or process: 'NoneType' object has no attribute 'merge'

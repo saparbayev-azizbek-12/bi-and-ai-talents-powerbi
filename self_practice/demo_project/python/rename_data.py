@@ -3,19 +3,20 @@ import json
 import pandas as pd
 
 
-def rename_files(FILENAMES, cnt = 0):
+def get_table_column_names(file_path="../source/column_table_map.json"):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data
 
-    with open('../source/column_table_map.json', 'r') as file:
-        table_column_names = json.load(file)
+def rename_files(ORIGINAL_FILENAMES, FILENAMES, cnt = 0):
 
-
-    for idx, name in enumerate(FILENAMES):
-        ind = f"{idx+1:02d}"
-        csv_path = f"../data/t{ind}.csv"
+    for ind, name in zip(ORIGINAL_FILENAMES, FILENAMES):
+        csv_path = f"../data/{ind}.csv"
         
         if os.path.exists(csv_path):
             data = pd.read_csv(csv_path)
-            column_names = table_column_names[ind]['columns'].values()  
+            table_column_names = get_table_column_names()
+            column_names = table_column_names[ind[1:]]['columns'].values()  
             data.columns = column_names
 
             os.remove(f"../data/{name}.csv")
